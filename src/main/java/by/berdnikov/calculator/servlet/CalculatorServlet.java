@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet("/index")
+@WebServlet("/calculator")
 public class CalculatorServlet extends HttpServlet {
 
     @Override
@@ -18,8 +18,13 @@ public class CalculatorServlet extends HttpServlet {
         String interest = req.getParameter("interest");
         String years = req.getParameter("years");
         String compoundingPeriod = req.getParameter("compoundingPeriod");
-
         String error;
+
+        //для того что бы не терялись значения в полях когда возвращаем ответ  и поместить в теге input value=""
+        req.setAttribute("principalAmount", principalAmount);
+        req.setAttribute("interest", interest);
+        req.setAttribute("years", years);
+        req.setAttribute("compoundingPeriod", compoundingPeriod);
 
         if (principalAmount == null || principalAmount.isBlank() || interest == null || interest.isBlank() ||
                 years == null || years.isBlank() || compoundingPeriod == null || compoundingPeriod.isBlank()) {
