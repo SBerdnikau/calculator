@@ -16,5 +16,7 @@ After the user inputs that information into an HTML form, process the request as
 
 I also recommend forwarding the inputs back to the page and putting them back into the input boxes so the user doesn’t need to retype them all. If there are any errors, like they don't provide all the necessary inputs, then forward an error back to the JSP page and display it.
 
-Formula to calculate compound interest:
-
+ **Formula to calculate compound interest**: 
+ 
+   
+   
