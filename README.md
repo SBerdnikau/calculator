@@ -23,4 +23,4 @@ I also recommend forwarding the inputs back to the page and putting them back in
    
 **Here is an example my task:**
 
-![Calculate]()   
+![Calculate](https://github.com/SBerdnikau/calculator/blob/master/calculator.PNG)   
